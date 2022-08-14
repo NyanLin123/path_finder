@@ -1,9 +1,11 @@
-class graph:
-    def __init__(self):
-        self.edges = {}
+import multiprocessing
 
-    def __str__(self):
-        return "Count"
+def fibon(n):
+    if n < 2:
+        return n 
+    else:
+        p1 = multiprocessing.Process(target=fibon, args=(n-1,))
+        p1.start()
+        p1.join()
 
-a = graph()
-print(a)
+        
