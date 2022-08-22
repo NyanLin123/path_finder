@@ -1,9 +1,15 @@
-input_string = '01000101'
-machines = ['m1','m2','m3']
 
-def automata(n,machines):
-    machines[0]
-    for i in n:
-        print(i)
+class automata:
+    def __init__(self, language):
+        self.language = language
+        self.result = ""
+        self.machines = {'m1':['m1','m2'],'m2':['m3','m2'],'m3':['m2','m2']}
 
-automata(input_string)
+    def add_machine():
+        pass
+
+    def __str__(self):
+        return 'finished'
+
+if __name__=='__main__':
+    automata('01000101')
