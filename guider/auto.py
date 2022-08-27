@@ -1,19 +1,17 @@
-from automata.fa.dfa import DFA
+from automata.fa.nfa import NFA
 
-dfa = DFA(
-    states={'m1', 'm2', 'm3', 'm4'},
-    input_symbols={'0', '1'},
+nfa2 = NFA(
+    states={'a1','a2'},
+    input_symbols={'0','1'},
     transitions={
-        'm1': {'0': 'm3', '1': 'm2'},
-        'm2': {'0': 'm1', '1': 'm4'},
-        'm3': {'0': 'm2', '1': 'm3'},
-        'm4': {'0': 'm4', '1': 'm1'},
-    },
-    initial_state='m1',
-    final_states={'m4'},
+        'a1':{'0':{'a2'},'1':{'a1'}},
+        'a2':{'0':{'a1'}}
+        },
+    initial_state='a1',
+    final_states={'a2'},
 )
-if dfa.accepts_input('0010'):
-    print('accepted')
+
+if nfa2.accepts_input('01'):
+    print('accepts')
 else:
-    print('rejected')
-print(dfa.validate())
+    print('reject')
