@@ -11,7 +11,8 @@ nfa2 = NFA(
     final_states={'a2'},
 )
 
-if nfa2.accepts_input('01'):
+if nfa2.accepts_input('01'): 
     print('accepts')
 else:
     print('reject')
+print("hello world")
