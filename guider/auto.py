@@ -15,5 +15,5 @@ if nfa2.accepts_input('01'):
     print('accepts')
 else:
     print('reject')
-print("hello world")
+print("hello world1213919918")
 print("hello world1")
