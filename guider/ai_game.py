@@ -3,4 +3,5 @@
 def guess_position():
     print('apple')
 
+
 guess_postion()

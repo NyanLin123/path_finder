@@ -1,6 +1,7 @@
 import time
 from functools import wraps
 
+
 def timethis(func):
     '''
     report these conversation
@@ -14,13 +15,15 @@ def timethis(func):
         return result
     return wrapper
 
+
 @timethis
-def countdown(n:int):
+def countdown(n: int):
     ''' 
     name result 
     '''
     while n > 0:
         n -= 1
+
 
 print(countdown.__annotations__)
 print(countdown.__doc__)
