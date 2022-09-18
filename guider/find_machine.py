@@ -1,11 +1,6 @@
 import time
 from functools import wraps
 
-class A:
-    @classmethod
-    def method(cls):
-        pass
-
 def timethis(func):
     '''
     report these conversation
