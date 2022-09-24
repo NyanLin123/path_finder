@@ -15,5 +15,10 @@ if nfa2.accepts_input('01'):
     print('accepts')
 else:
     print('reject')
+<<<<<<< HEAD
 print("hello world")
 print("hello world")
+=======
+print("hello world121391991susfaoisuf8")
+print("hello world1")
+>>>>>>> origin/main
